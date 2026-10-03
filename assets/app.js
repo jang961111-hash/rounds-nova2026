@@ -23,7 +23,7 @@
       c.style.setProperty("--d",(i*0.12)+"s");
       var hasPhoto=!!m.photo&&safeUrl(m.photo);
       var ph=el("div",hasPhoto?"photo":"photo avatar");
-      if(hasPhoto){var img=el("img");img.src=m.photo+"?v=10040029";img.alt=pick(m,"name")+tr("m.photoAlt");img.loading="lazy";if(m.photoZoom){img.style.transform="scale("+m.photoZoom+")";img.style.transformOrigin="50% 30%"}ph.appendChild(img)}
+      if(hasPhoto){var img=el("img");img.src=m.photo+"?v=10040044";img.alt=pick(m,"name")+tr("m.photoAlt");img.loading="lazy";if(m.photoZoom){img.style.transform="scale("+m.photoZoom+")";img.style.transformOrigin="50% 30%"}ph.appendChild(img)}
       else{var ini=el("span","initial",/^\(/.test(m.name||"")?"Dr":(m.name||"?").charAt(0));ini.setAttribute("aria-hidden","true");ph.appendChild(ini)}
       c.appendChild(ph);
       var b=el("div","body");
