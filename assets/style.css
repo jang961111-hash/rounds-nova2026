@@ -311,9 +311,9 @@ footer .secure{font-weight:700;color:var(--ink)}
   html:not(.js) header.top nav{order:5;width:100%;margin:0;gap:16px;flex-wrap:wrap}
 }
 
-/* 3열(데스크톱)일 때 팀장을 가운데로: 부팀장 | 팀장 | 팀원. 태블릿·모바일은 팀장이 맨 앞 */
+/* 3열(데스크톱)일 때 팀장을 가운데로: 신민서 | 팀장 | 박연주(부팀장). 태블릿·모바일은 팀장이 맨 앞 */
 @media (min-width:981px){
   #members > .card:nth-child(1){order:2}
-  #members > .card:nth-child(2){order:1}
-  #members > .card:nth-child(3){order:3}
+  #members > .card:nth-child(2){order:3}
+  #members > .card:nth-child(3){order:1}
 }
