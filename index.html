@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rounds · 회진 | N.O.V.A. 2026 팀 소개</title>
+<meta name="description" content="의료진의 회진처럼, 개발자와 의사가 함께 검토하는 Doctor Agent 팀 Rounds의 N.O.V.A. 2026 팀 소개 페이지">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <strong>Rounds · 회진</strong>
+  <nav aria-label="섹션">
+    <a href="#team">팀원</a><a href="#approach">접근 전략</a><a href="#refs">참고 문헌</a><a href="#status">진행 현황</a>
+  </nav>
+  <button id="theme" type="button" aria-label="라이트/다크 전환">테마</button>
+</div></header>
+
+<main>
+<section class="hero" style="border-top:0"><div class="wrap">
+  <div class="eyebrow">N.O.V.A. 2026 참가팀</div>
+  <h1>Rounds · 회진</h1>
+  <p class="lead">의료진의 회진처럼, 개발자와 의사가 함께 검토하는 Doctor Agent 팀</p>
+  <p>
+    <a class="btn primary" href="https://nova.snubhai.org/" target="_blank" rel="noopener noreferrer">N.O.V.A. 2026 공식 사이트</a>
+  </p>
+  <p style="color:var(--muted);font-size:.92rem">분당서울대병원 의료인공지능센터 · 엘리스 주최</p>
+</div></section>
+
+<section id="team"><div class="wrap">
+  <h2>팀원</h2>
+  <p class="sub">개발자 3명과 의사 1명. 카드 내용은 <code>members.js</code>에서 관리합니다.</p>
+  <div class="grid" id="members"></div>
+  <noscript><p>팀원 정보를 보려면 JavaScript를 켜 주세요.</p></noscript>
+</div></section>
+
+<section id="approach"><div class="wrap">
+  <h2>접근 전략</h2>
+  <p class="sub">대화형 진단에서 "다음에 무엇을 물을 것인가"를 설계로 푼다.</p>
+  <div class="principle"><b>LLM은 판단, 코드는 상태·순서·안전·종료.</b> 고정된 모델의 한계를 오케스트레이션과 임상 규칙으로 보완합니다.</div>
+
+  <h3>7단계 턴 루프</h3>
+  <svg class="diagram" viewBox="0 0 960 190" role="img" aria-label="7단계 턴 루프: 상태 추출, 감별 갱신, 반론, 후보 액션, 점수, 안전 게이트, 종료 판정">
+    <defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="arrowhead" d="M0 0L10 5L0 10z"/></marker></defs>
+    <g font-size="14" text-anchor="middle">
+      <rect class="box llm" x="6" y="30" width="116" height="64" rx="10"/><text x="64" y="58">1 상태 추출</text><text x="64" y="78" font-size="11">LLM</text>
+      <rect class="box llm" x="144" y="30" width="116" height="64" rx="10"/><text x="202" y="58">2 감별 갱신</text><text x="202" y="78" font-size="11">LLM</text>
+      <rect class="box llm" x="282" y="30" width="116" height="64" rx="10"/><text x="340" y="58">3 반론</text><text x="340" y="78" font-size="11">LLM</text>
+      <rect class="box llm" x="420" y="30" width="116" height="64" rx="10"/><text x="478" y="58">4 후보 액션</text><text x="478" y="78" font-size="11">LLM</text>
+      <rect class="box code" x="558" y="30" width="116" height="64" rx="10"/><text x="616" y="58">5 점수</text><text x="616" y="78" font-size="11">코드 + LLM</text>
+      <rect class="box code" x="696" y="30" width="116" height="64" rx="10"/><text x="754" y="58">6 안전 게이트</text><text x="754" y="78" font-size="11">코드</text>
+      <rect class="box code" x="834" y="30" width="116" height="64" rx="10"/><text x="892" y="58">7 종료 판정</text><text x="892" y="78" font-size="11">코드</text>
+    </g>
+    <g class="arrow" marker-end="url(#ah)">
+      <path d="M122 62H142"/><path d="M260 62H280"/><path d="M398 62H418"/><path d="M536 62H556"/><path d="M674 62H694"/><path d="M812 62H832"/>
+    </g>
+    <path class="arrow" marker-end="url(#ah)" d="M892 94V150H64V98"/>
+    <text x="478" y="172" font-size="12" text-anchor="middle">종료 조건 미충족 시 최고점 액션 실행(ASK / EXAM / TEST) 후 다음 턴</text>
+    <text x="892" y="20" font-size="12" text-anchor="middle">DIAGNOSE</text>
+  </svg>
+
+  <ol class="loop">
+    <li><b>상태 추출</b>직전 응답을 구조화 상태(소견·위험 신호 확인 여부)로 갱신<span class="tag llm">LLM</span></li>
+    <li><b>감별 갱신</b>감별진단 목록과 확률 재순위<span class="tag llm">LLM</span></li>
+    <li><b>반론</b>반대 근거와 놓친 위험 질환을 제시해 조기 확정을 막음<span class="tag llm">LLM</span></li>
+    <li><b>후보 액션</b>질문·진찰·검사 후보 생성<span class="tag llm">LLM</span></li>
+    <li><b>점수</b>판별력 − λ·비용 − 안전 페널티<span class="tag code">코드</span></li>
+    <li><b>안전 게이트</b>중복 질문 차단, 위험 신호 확인 강제, 형식 검증<span class="tag code">코드</span></li>
+    <li><b>종료 판정</b>확신도·일관성·위험 질환 배제·최소 증거를 모두 만족할 때만 진단, 턴 하드캡 적용<span class="tag code">코드</span></li>
+  </ol>
+
+  <h3>평가 3축 대응</h3>
+  <div class="tablewrap"><table>
+    <thead><tr><th>평가 축</th><th>우리의 대응</th></tr></thead>
+    <tbody>
+      <tr><td><b>정확도</b></td><td>구조화 상태와 감별진단 명시 유지 · 반론 단계로 초기 가정 고착 방지 · 확정 지연(최소 증거) · 일관성 기반 최종 선택 · 공개 의학 자료 검색(RAG) 보강</td></tr>
+      <tr><td><b>효율성</b></td><td>감별진단을 잘 가르는 액션 우선 · 같은 효과면 문진과 비침습 검사 우선 · 중복 질문 차단 · 정보 이득이 고갈되면 종료</td></tr>
+      <tr><td><b>안전성</b></td><td>위험 신호 선행 문진 · 놓치면 안 되는 질환 고정 · 검사 화이트리스트와 사유 검증 · 과잉 검사 억제 · 턴 하드캡으로 무진단 종료 방지</td></tr>
+    </tbody>
+  </table></div>
+  <p style="color:var(--muted);font-size:.88rem">세부 지표와 가중치는 대회 측이 예선 전에 공개할 예정이며, 공개 후 점수식의 λ를 조정합니다.</p>
+</div></section>
+
+<section id="refs"><div class="wrap">
+  <h2>참고 문헌</h2>
+  <p class="sub">설계 근거로 삼은 핵심 연구.</p>
+  <ul class="refs">
+    <li><a href="https://arxiv.org/abs/2401.05654" target="_blank" rel="noopener noreferrer">Towards Conversational Diagnostic AI (AMIE)</a> <span class="y">Tu 외, 2024 (Nature, 2025)</span></li>
+    <li><a href="https://arxiv.org/abs/2405.07960" target="_blank" rel="noopener noreferrer">AgentClinic</a> <span class="y">Schmidgall 외, 2024</span><span class="n">순차 대화로 바꾸면 정확도 급락, 지속 메모 도구로 개선</span></li>
+    <li><a href="https://arxiv.org/abs/2406.00922" target="_blank" rel="noopener noreferrer">MediQ</a> <span class="y">Li 외, NeurIPS 2024</span><span class="n">확신도 기반 답변 보류와 추가 질문</span></li>
+    <li><a href="https://arxiv.org/abs/2506.22405" target="_blank" rel="noopener noreferrer">Sequential Diagnosis with Language Models (SDBench / MAI-DxO)</a> <span class="y">Nori 외, 2025</span></li>
+    <li><a href="https://arxiv.org/abs/2402.03271" target="_blank" rel="noopener noreferrer">Uncertainty of Thoughts (UoT)</a> <span class="y">Hu 외, NeurIPS 2024</span><span class="n">정보 이득 기반 질문 선택</span></li>
+    <li><a href="https://arxiv.org/abs/2604.04325" target="_blank" rel="noopener noreferrer">Hold, Lure, and Self-Correction</a> <span class="y">Fang 외, 2026</span><span class="n">대화 초반에 답이 확정되는 경향</span></li>
+    <li><a href="https://arxiv.org/abs/2505.06120" target="_blank" rel="noopener noreferrer">LLMs Get Lost in Multi-Turn Conversation</a> <span class="y">Laban 외, 2025</span><span class="n">다턴 대화에서 성능 저하</span></li>
+    <li><a href="https://arxiv.org/abs/2508.10925" target="_blank" rel="noopener noreferrer">gpt-oss-120b &amp; gpt-oss-20b Model Card</a> <span class="y">OpenAI, 2025</span></li>
+  </ul>
+</div></section>
+
+<section id="status"><div class="wrap">
+  <h2>진행 현황</h2>
+  <p class="sub">N.O.V.A. 2026 일정</p>
+  <ul class="timeline">
+    <li><b>10/6</b> 개회</li>
+    <li><b>10/12 – 10/22</b> 예선</li>
+    <li><b>10/27 – 11/10</b> 본선</li>
+    <li><b>11/20</b> 시상</li>
+  </ul>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <p class="secure">비공개 증례·평가 데이터는 이 저장소에 포함하지 않습니다.</p>
+  <p>Rounds · 회진 &middot; <a href="https://nova.snubhai.org/" target="_blank" rel="noopener noreferrer">N.O.V.A. 2026</a></p>
+</div></footer>
+
+<script src="members.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

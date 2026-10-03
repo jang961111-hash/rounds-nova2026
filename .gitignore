@@ -1,0 +1,16 @@
+# 비공개 증례·평가 데이터는 절대 커밋하지 않는다
+cases/
+case/
+data/private/
+data/cases/
+private/
+*.case.json
+eval/
+submissions/
+*.zip
+.DS_Store
+.env
+
+# 로컬 도구 상태
+.omc/
+.DS_Store
