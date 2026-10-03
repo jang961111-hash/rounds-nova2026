@@ -12,7 +12,7 @@ window.MEMBERS = [
     name: "장병헌",
     photo: "assets/members/jang-byeongheon.jpg",
     role: "팀장 · 에이전트 설계·개발",
-    affiliation: "SK AI Leader Academy (SKALA) 4기",
+    affiliation: "SK AI Leader Academy (SKALA) 4기 · SSAFY 14기 · 전남대학교 철학과 졸업",
     intro: "국방·신약·결제 도메인에서 LLM 에이전트를 설계·구현해 왔습니다. LLM에게 무엇을 맡기고 무엇을 코드로 묶을지가 관심사입니다.",
     highlights: [
       "SKT 모두의 Promp.T 공모전 Life AX 부문 최우수상 (2026.8)",
