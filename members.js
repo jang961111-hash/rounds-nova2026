@@ -30,10 +30,15 @@ window.MEMBERS = [
   },
   {
     name: "박연주",
-    role: "부팀장",
-    affiliation: "SK AI Leader Academy (SKALA) 4기",
-    intro: "TODO",
-    highlights: [],
+    role: "부팀장 · 의료영상·그래프 모델링",
+    affiliation: "SK AI Leader Academy (SKALA) 4기 · 한양대학교 인공지능학과 석사",
+    intro: "뇌영상(DTI·rs-fMRI)과 유전체 데이터로 알츠하이머 분류를 연구했습니다. 데이터 규모에 맞는 모델 복잡도와 통제 실험을 중시합니다.",
+    highlights: [
+      "멀티모달 뇌 그래프 기반 알츠하이머 분류 (DTI·rs-fMRI 그래프 융합, Directed GCN·TCN·Transformer)",
+      "유전자 Transformer 위치 인코딩 비교 연구 (SNP 서열, Sinusoidal·Learnable·RoPE·ALiBi)",
+      "뇌 부위별 유전자 발현(AHBA) 기반 유전자 그래프 구축",
+      "한양대 계산신경영상분석(CNA) 연구실 · 서울여대 시각컴퓨팅·의료영상(VCMI) 연구실"
+    ],
     links: { github: "", portfolio: "", paper: "", project: "" }
   },
   {
