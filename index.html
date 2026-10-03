@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Rounds · 회진 | N.O.V.A. 2026 팀 소개</title>
-<meta name="description" content="다음에 무엇을 물을지 아는 Doctor Agent. 현업 의사 자문과 함께 회진하듯 검토하며 만드는 팀 Rounds의 N.O.V.A. 2026 팀 소개 페이지">
+<meta name="description" data-i18n-attr="content:meta.desc" content="다음에 무엇을 물을지 아는 Doctor Agent. 현업 의사 자문과 함께 회진하듯 검토하며 만드는 팀 Rounds의 N.O.V.A. 2026 팀 소개 페이지">
 <meta name="color-scheme" content="light dark">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
-<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/style.css?v=10032339">
 <script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
@@ -26,15 +26,22 @@
     <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 3L5 14h6l-1 7 8-11h-6z"/></symbol>
     <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M12 9v6M9 12h6"/></symbol>
     <symbol id="i-ext" viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></symbol>
+    <symbol id="i-theme" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5v17a8.5 8.5 0 0 0 0-17z" fill="currentColor"/></symbol>
   </defs>
 </svg>
 
 <header class="top"><div class="wrap">
   <a class="brand" href="#top"><svg class="pulse" viewBox="0 0 32 16" aria-hidden="true"><path d="M1 9h8l3-7 4 13 3-6h12"/></svg>Rounds · 회진</a>
-  <nav aria-label="섹션">
-    <a href="#team">팀원</a><a href="#approach">접근 전략</a><a href="#refs">참고 문헌</a><a href="#status">진행 현황</a>
+  <nav id="site-nav" aria-label="섹션" data-i18n-attr="aria-label:nav.label">
+    <a href="#team" data-i18n="nav.team">팀원</a><a href="#approach" data-i18n="nav.approach">접근 전략</a><a href="#refs" data-i18n="nav.refs">참고 문헌</a><a href="#status" data-i18n="nav.status">진행 현황</a>
   </nav>
-  <button id="theme" type="button" aria-label="라이트/다크 전환">테마</button>
+  <div class="tools">
+    <div class="lang" role="group" aria-label="언어 선택 / Language">
+      <button type="button" data-lang="ko" lang="ko" aria-pressed="true" aria-label="한국어">KO</button><span class="sep" aria-hidden="true">|</span><button type="button" data-lang="en" lang="en" aria-pressed="false" aria-label="English">EN</button>
+    </div>
+    <button id="theme" type="button" aria-label="라이트/다크 전환" data-i18n-attr="aria-label:ui.themeLabel"><svg class="ti" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-theme"/></svg><span class="lbl" data-i18n="ui.theme">테마</span></button>
+    <button id="menu" class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="메뉴 열기"><span class="bars" aria-hidden="true"><i></i><i></i><i></i></span></button>
+  </div>
 </div></header>
 
 <main id="top">
@@ -42,19 +49,19 @@
 <!-- HERO -->
 <section class="hero"><div class="wrap hero-grid">
   <div class="hero-copy">
-    <div class="eyebrow">N.O.V.A. 2026 참가팀</div>
+    <div class="eyebrow" data-i18n="hero.eyebrow">N.O.V.A. 2026 참가팀</div>
     <h1><span class="h1-a">Rounds</span><span class="h1-b">· 회진</span></h1>
-    <p class="slogan">다음에 무엇을 물을지 아는<br><em>Doctor Agent</em></p>
-    <p class="lead">의료진의 회진처럼, 현업 의사 자문과 함께 검토하며 만드는 팀</p>
+    <p class="slogan" data-i18n-html="hero.slogan">다음에 무엇을 물을지 아는<br><em>Doctor Agent</em></p>
+    <p class="lead" data-i18n="hero.lead">의료진의 회진처럼, 현업 의사 자문과 함께 검토하며 만드는 팀</p>
     <p class="cta">
-      <a class="btn primary" href="#team">팀원 만나기</a>
-      <a class="btn" href="https://nova.snubhai.org/" target="_blank" rel="noopener noreferrer">N.O.V.A. 2026 공식 사이트</a>
+      <a class="btn primary" href="#team" data-i18n="hero.cta1">팀원 만나기</a>
+      <a class="btn" href="https://nova.snubhai.org/" target="_blank" rel="noopener noreferrer" data-i18n="hero.cta2">N.O.V.A. 2026 공식 사이트</a>
     </p>
-    <p class="host">분당서울대병원 의료인공지능센터 · 엘리스 주최</p>
+    <p class="host" data-i18n="hero.host">분당서울대병원 의료인공지능센터 · 엘리스 주최</p>
   </div>
 
   <div class="hero-art">
-    <svg viewBox="0 0 560 520" role="img" aria-label="환자의 말에서 시작해 감별진단 후보를 좁히고 진단에 이르는 흐름을 그린 일러스트. 하단에는 심전도 라인">
+    <svg viewBox="0 0 560 520" role="img" aria-label="환자의 말에서 시작해 감별진단 후보를 좁히고 진단에 이르는 흐름을 그린 일러스트. 하단에는 심전도 라인" data-i18n-attr="aria-label:svg.alt">
       <defs>
         <linearGradient id="pg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2436B8"/><stop offset="1" stop-color="#131F73"/></linearGradient>
         <marker id="ha" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#fff"/></marker>
@@ -75,14 +82,14 @@
       <!-- 1. 대화 말풍선 -->
       <g class="a a1">
         <path d="M46 36h200a18 18 0 0 1 18 18v52a18 18 0 0 1-18 18H98l-26 22 4-22H46a18 18 0 0 1-18-18V54a18 18 0 0 1 18-18z" fill="#fff"/>
-        <text x="46" y="64" font-size="12" font-weight="700" fill="#1B2A9A" opacity=".7">환자</text>
-        <text x="46" y="92" font-size="19" font-weight="800" fill="#1B2A9A">가슴이 답답해요</text>
+        <text x="46" y="64" font-size="12" font-weight="700" fill="#1B2A9A" opacity=".7" data-i18n="svg.patient">환자</text>
+        <text x="46" y="92" font-size="19" font-weight="800" fill="#1B2A9A" data-i18n="svg.chest">가슴이 답답해요</text>
       </g>
       <path class="a a2" d="M268 70H296" stroke="#fff" stroke-width="3" stroke-linecap="round" marker-end="url(#ha)" fill="none"/>
       <g class="a a2">
         <path d="M316 40h200a18 18 0 0 1 18 18v52a18 18 0 0 1-18 18h-26l4 22-26-22H316a18 18 0 0 1-18-18V58a18 18 0 0 1 18-18z" fill="#fff" fill-opacity=".14" stroke="#fff" stroke-width="2"/>
         <text x="316" y="68" font-size="12" font-weight="700" fill="#fff" opacity=".75">Doctor Agent</text>
-        <text x="316" y="96" font-size="19" font-weight="800" fill="#fff">언제부터 그러셨나요?</text>
+        <text x="316" y="96" font-size="19" font-weight="800" fill="#fff" data-i18n="svg.when">언제부터 그러셨나요?</text>
       </g>
 
       <!-- 2. 감별진단 트리 -->
@@ -92,7 +99,7 @@
       </g>
       <g class="a a3">
         <rect x="224" y="212" width="112" height="36" rx="18" fill="#fff"/>
-        <text x="280" y="236" text-anchor="middle" font-size="16" font-weight="800" fill="#1B2A9A">감별진단</text>
+        <text x="280" y="236" text-anchor="middle" font-size="16" font-weight="800" fill="#1B2A9A" data-i18n="svg.diff">감별진단</text>
       </g>
       <g class="a a4">
         <rect x="70" y="284" width="116" height="58" rx="12" fill="#fff" fill-opacity=".14" stroke="#fff" stroke-opacity=".6" stroke-width="1.5"/>
@@ -101,8 +108,8 @@
         <rect x="236" y="308" width="88" height="8" rx="4" fill="#1B2A9A" fill-opacity=".15"/><rect x="236" y="308" width="70" height="8" rx="4" fill="#1B2A9A"/>
         <rect x="374" y="284" width="116" height="58" rx="12" fill="#fff" fill-opacity=".14" stroke="#fff" stroke-opacity=".6" stroke-width="1.5"/>
         <rect x="388" y="308" width="88" height="8" rx="4" fill="#fff" fill-opacity=".25"/><rect x="388" y="308" width="22" height="8" rx="4" fill="#fff" fill-opacity=".8"/>
-        <g font-size="11" font-weight="700" fill="#fff" opacity=".85"><text x="84" y="302">후보 A</text><text x="388" y="302">후보 C</text></g>
-        <text x="236" y="302" font-size="11" font-weight="800" fill="#1B2A9A">후보 B</text>
+        <g font-size="11" font-weight="700" fill="#fff" opacity=".85"><text x="84" y="302" data-i18n="svg.candA">후보 A</text><text x="388" y="302" data-i18n="svg.candC">후보 C</text></g>
+        <text x="236" y="302" font-size="11" font-weight="800" fill="#1B2A9A" data-i18n="svg.candB">후보 B</text>
       </g>
 
       <!-- 3. 진단 체크 -->
@@ -110,7 +117,7 @@
       <g class="a a5">
         <circle cx="280" cy="400" r="32" fill="#fff"/>
         <path d="M265 400l11 11 20-23" fill="none" stroke="#1B2A9A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-        <text x="330" y="406" font-size="17" font-weight="800" fill="#fff">진단 확정</text>
+        <text x="330" y="406" font-size="17" font-weight="800" fill="#fff" data-i18n="svg.done">진단 확정</text>
       </g>
 
       <!-- 심전도 라인 -->
@@ -120,124 +127,125 @@
 </div></section>
 
 <!-- 핵심 수치 스트립 -->
-<section class="strip-sec" aria-label="핵심 수치"><div class="wrap">
+<section class="strip-sec" aria-label="핵심 수치" data-i18n-attr="aria-label:strip.label"><div class="wrap">
   <div class="strip">
     <div class="strip-row">
-      <div class="strip-label">대회</div>
-      <div class="stat reveal"><b>60<small>턴</small></b><span>대화 턴 상한</span></div>
-      <div class="stat reveal"><b>3<small>축</small></b><span>정확도 · 효율성 · 안전성</span></div>
-      <div class="stat reveal"><b class="sm">gpt-oss-20b</b><span>모델 고정</span></div>
-      <div class="stat reveal"><b class="sm">10/12–10/22</b><span>예선 기간</span></div>
+      <div class="strip-label" data-i18n="strip.event">대회</div>
+      <div class="stat reveal"><b>60<small data-i18n="s.turn">턴</small></b><span data-i18n="s.turnLbl">대화 턴 상한</span></div>
+      <div class="stat reveal"><b>3<small data-i18n="s.axes">축</small></b><span data-i18n="s.axesLbl">정확도 · 효율성 · 안전성</span></div>
+      <div class="stat reveal"><b class="sm">gpt-oss-20b</b><span data-i18n="s.modelLbl">모델 고정</span></div>
+      <div class="stat reveal"><b class="sm">10/12–10/22</b><span data-i18n="s.dateLbl">예선 기간</span></div>
     </div>
     <div class="strip-row team">
-      <div class="strip-label">팀</div>
-      <div class="stat reveal"><b>3<small>건</small></b><span>병원 협업 의료 AI 프로젝트</span></div>
-      <div class="stat reveal"><b class="sm">석사 연구</b><span>의료영상 · 알츠하이머 분류</span></div>
-      <div class="stat reveal"><b class="sm">다수</b><span>에이전트 해커톤 참여</span></div>
-      <div class="stat reveal"><b class="sm">3명</b><span>AI 서비스 개발자 + 의사 자문</span></div>
+      <div class="strip-label" data-i18n="strip.team">팀</div>
+      <div class="stat reveal"><b>3<small data-i18n="t.cases">건</small></b><span data-i18n="t.casesLbl">병원 협업 의료 AI 프로젝트</span></div>
+      <div class="stat reveal"><b class="sm" data-i18n="t.thesis">석사 연구</b><span data-i18n="t.thesisLbl">의료영상 · 알츠하이머 분류</span></div>
+      <div class="stat reveal"><b class="sm" data-i18n="t.many">다수</b><span data-i18n="t.manyLbl">에이전트 해커톤 참여</span></div>
+      <div class="stat reveal"><b class="sm" data-i18n="t.three">3명</b><span data-i18n="t.threeLbl">AI 서비스 개발자 + 의사 자문</span></div>
     </div>
   </div>
 </div></section>
 
 <section id="team"><div class="wrap">
-  <div class="sec-head reveal"><span class="num">01</span><h2>팀원</h2></div>
-  <p class="sub reveal">AI 서비스 개발자 3명, 임상 판단은 현업 의사 자문으로 보완합니다.</p>
+  <div class="sec-head reveal"><span class="num">01</span><h2 data-i18n="team.h">팀원</h2></div>
+  <p class="sub reveal" data-i18n="team.sub">AI 서비스 개발자 3명, 임상 판단은 현업 의사 자문으로 보완합니다.</p>
   <div class="grid" id="members"></div>
   <noscript><p>팀원 정보를 보려면 JavaScript를 켜 주세요.</p></noscript>
 </div></section>
 
 <section id="approach" class="tintbg"><div class="wrap">
-  <div class="sec-head reveal"><span class="num">02</span><h2>접근 전략</h2></div>
-  <p class="sub reveal">대화형 진단에서 "다음에 무엇을 물을 것인가"를 설계로 푼다.</p>
-  <div class="principle reveal"><b>LLM은 판단, 코드는 상태·순서·안전·종료.</b> 고정된 모델의 한계를 오케스트레이션과 임상 규칙으로 보완합니다.</div>
+  <div class="sec-head reveal"><span class="num">02</span><h2 data-i18n="ap.h">접근 전략</h2></div>
+  <p class="sub reveal" data-i18n="ap.sub">대화형 진단에서 "다음에 무엇을 물을 것인가"를 설계로 푼다.</p>
+  <div class="principle reveal" data-i18n-html="ap.principle"><b>LLM은 판단, 코드는 상태·순서·안전·종료.</b> 고정된 모델의 한계를 오케스트레이션과 임상 규칙으로 보완합니다.</div>
 
-  <h3 class="reveal">7단계 턴 루프</h3>
-  <div class="legend reveal"><span class="lg llm">LLM 담당</span><span class="lg code">코드 담당</span></div>
+  <h3 class="reveal" data-i18n="ap.loop">7단계 턴 루프</h3>
+  <div class="legend reveal"><span class="lg llm" data-i18n="ap.lgLlm">LLM 담당</span><span class="lg code" data-i18n="ap.lgCode">코드 담당</span></div>
 
-  <svg class="flow" viewBox="0 0 1000 280" role="img" aria-label="7단계 턴 루프: 상태 추출, 감별 갱신, 반론, 후보 액션, 점수, 안전 게이트, 종료 판정. 종료 조건 미충족 시 다음 턴으로 반복">
+  <svg class="flow" viewBox="0 0 1000 280" role="img" aria-label="7단계 턴 루프: 상태 추출, 감별 갱신, 반론, 후보 액션, 점수, 안전 게이트, 종료 판정. 종료 조건 미충족 시 다음 턴으로 반복" data-i18n-attr="aria-label:flow.alt">
     <defs><marker id="fa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="arrowhead" d="M0 0L10 5L0 10z"/></marker></defs>
     <g class="nodes" text-anchor="middle">
-      <g class="nd llm" transform="translate(8 30)"><rect class="box" width="118" height="140" rx="14"/><circle class="ic-bg" cx="59" cy="38" r="24"/><use class="ic" href="#i-state" x="43" y="22" width="32" height="32"/><text class="n" x="59" y="90">1</text><text class="t" x="59" y="112">상태 추출</text><text class="s" x="59" y="130">LLM</text></g>
-      <g class="nd llm" transform="translate(150 30)"><rect class="box" width="118" height="140" rx="14"/><circle class="ic-bg" cx="59" cy="38" r="24"/><use class="ic" href="#i-diff" x="43" y="22" width="32" height="32"/><text class="n" x="59" y="90">2</text><text class="t" x="59" y="112">감별 갱신</text><text class="s" x="59" y="130">LLM</text></g>
-      <g class="nd llm" transform="translate(292 30)"><rect class="box" width="118" height="140" rx="14"/><circle class="ic-bg" cx="59" cy="38" r="24"/><use class="ic" href="#i-counter" x="43" y="22" width="32" height="32"/><text class="n" x="59" y="90">3</text><text class="t" x="59" y="112">반론</text><text class="s" x="59" y="130">LLM</text></g>
-      <g class="nd llm" transform="translate(434 30)"><rect class="box" width="118" height="140" rx="14"/><circle class="ic-bg" cx="59" cy="38" r="24"/><use class="ic" href="#i-action" x="43" y="22" width="32" height="32"/><text class="n" x="59" y="90">4</text><text class="t" x="59" y="112">후보 액션</text><text class="s" x="59" y="130">LLM</text></g>
-      <g class="nd code" transform="translate(576 30)"><rect class="box" width="118" height="140" rx="14"/><circle class="ic-bg" cx="59" cy="38" r="24"/><use class="ic" href="#i-score" x="43" y="22" width="32" height="32"/><text class="n" x="59" y="90">5</text><text class="t" x="59" y="112">점수</text><text class="s" x="59" y="130">코드 + LLM</text></g>
-      <g class="nd code" transform="translate(718 30)"><rect class="box" width="118" height="140" rx="14"/><circle class="ic-bg" cx="59" cy="38" r="24"/><use class="ic" href="#i-gate" x="43" y="22" width="32" height="32"/><text class="n" x="59" y="90">6</text><text class="t" x="59" y="112">안전 게이트</text><text class="s" x="59" y="130">코드</text></g>
-      <g class="nd code" transform="translate(860 30)"><rect class="box" width="118" height="140" rx="14"/><circle class="ic-bg" cx="59" cy="38" r="24"/><use class="ic" href="#i-end" x="43" y="22" width="32" height="32"/><text class="n" x="59" y="90">7</text><text class="t" x="59" y="112">종료 판정</text><text class="s" x="59" y="130">코드</text></g>
+      <g class="nd llm" transform="translate(8 30)"><rect class="box" width="118" height="140" rx="14"/><circle class="ic-bg" cx="59" cy="38" r="24"/><use class="ic" href="#i-state" x="43" y="22" width="32" height="32"/><text class="n" x="59" y="90">1</text><text class="t" x="59" y="112" data-i18n="f.1">상태 추출</text><text class="s" x="59" y="130">LLM</text></g>
+      <g class="nd llm" transform="translate(150 30)"><rect class="box" width="118" height="140" rx="14"/><circle class="ic-bg" cx="59" cy="38" r="24"/><use class="ic" href="#i-diff" x="43" y="22" width="32" height="32"/><text class="n" x="59" y="90">2</text><text class="t" x="59" y="112" data-i18n="f.2">감별 갱신</text><text class="s" x="59" y="130">LLM</text></g>
+      <g class="nd llm" transform="translate(292 30)"><rect class="box" width="118" height="140" rx="14"/><circle class="ic-bg" cx="59" cy="38" r="24"/><use class="ic" href="#i-counter" x="43" y="22" width="32" height="32"/><text class="n" x="59" y="90">3</text><text class="t" x="59" y="112" data-i18n="f.3">반론</text><text class="s" x="59" y="130">LLM</text></g>
+      <g class="nd llm" transform="translate(434 30)"><rect class="box" width="118" height="140" rx="14"/><circle class="ic-bg" cx="59" cy="38" r="24"/><use class="ic" href="#i-action" x="43" y="22" width="32" height="32"/><text class="n" x="59" y="90">4</text><text class="t" x="59" y="112" data-i18n="f.4">후보 액션</text><text class="s" x="59" y="130">LLM</text></g>
+      <g class="nd code" transform="translate(576 30)"><rect class="box" width="118" height="140" rx="14"/><circle class="ic-bg" cx="59" cy="38" r="24"/><use class="ic" href="#i-score" x="43" y="22" width="32" height="32"/><text class="n" x="59" y="90">5</text><text class="t" x="59" y="112" data-i18n="f.5">점수</text><text class="s" x="59" y="130" data-i18n="f.codeLlm">코드 + LLM</text></g>
+      <g class="nd code" transform="translate(718 30)"><rect class="box" width="118" height="140" rx="14"/><circle class="ic-bg" cx="59" cy="38" r="24"/><use class="ic" href="#i-gate" x="43" y="22" width="32" height="32"/><text class="n" x="59" y="90">6</text><text class="t" x="59" y="112" data-i18n="f.6">안전 게이트</text><text class="s" x="59" y="130" data-i18n="tag.code">코드</text></g>
+      <g class="nd code" transform="translate(860 30)"><rect class="box" width="118" height="140" rx="14"/><circle class="ic-bg" cx="59" cy="38" r="24"/><use class="ic" href="#i-end" x="43" y="22" width="32" height="32"/><text class="n" x="59" y="90">7</text><text class="t" x="59" y="112" data-i18n="f.7">종료 판정</text><text class="s" x="59" y="130" data-i18n="tag.code">코드</text></g>
     </g>
     <g class="arrow" marker-end="url(#fa)">
       <path d="M126 100H148"/><path d="M268 100H290"/><path d="M410 100H432"/><path d="M552 100H574"/><path d="M694 100H716"/><path d="M836 100H858"/>
     </g>
     <path class="arrow dash" marker-end="url(#fa)" d="M919 170V228Q919 246 901 246H76Q67 246 67 228V176"/>
-    <text class="cap" x="500" y="236" text-anchor="middle">종료 조건 미충족 시 최고점 액션(ASK / EXAM / TEST) 실행 후 다음 턴</text>
-    <text class="cap b" x="919" y="20" text-anchor="middle">충족 시 DIAGNOSE</text>
+    <text class="cap" x="500" y="236" text-anchor="middle" data-i18n="f.cap">종료 조건 미충족 시 최고점 액션(ASK / EXAM / TEST) 실행 후 다음 턴</text>
+    <text class="cap b" x="919" y="20" text-anchor="middle" data-i18n="f.capB">충족 시 DIAGNOSE</text>
   </svg>
 
   <ol class="loop">
-    <li class="reveal llm"><span class="ico"><svg viewBox="0 0 24 24"><use href="#i-state"/></svg></span><div><b>1 상태 추출</b>직전 응답을 구조화 상태(소견·위험 신호 확인 여부)로 갱신<span class="tag llm">LLM</span></div></li>
-    <li class="reveal llm"><span class="ico"><svg viewBox="0 0 24 24"><use href="#i-diff"/></svg></span><div><b>2 감별 갱신</b>감별진단 목록과 확률 재순위<span class="tag llm">LLM</span></div></li>
-    <li class="reveal llm"><span class="ico"><svg viewBox="0 0 24 24"><use href="#i-counter"/></svg></span><div><b>3 반론</b>반대 근거와 놓친 위험 질환을 제시해 조기 확정을 막음<span class="tag llm">LLM</span></div></li>
-    <li class="reveal llm"><span class="ico"><svg viewBox="0 0 24 24"><use href="#i-action"/></svg></span><div><b>4 후보 액션</b>질문·진찰·검사 후보 생성<span class="tag llm">LLM</span></div></li>
-    <li class="reveal code"><span class="ico"><svg viewBox="0 0 24 24"><use href="#i-score"/></svg></span><div><b>5 점수</b>판별력 − λ·비용 − 안전 페널티<span class="tag code">코드</span></div></li>
-    <li class="reveal code"><span class="ico"><svg viewBox="0 0 24 24"><use href="#i-gate"/></svg></span><div><b>6 안전 게이트</b>중복 질문 차단, 위험 신호 확인 강제, 형식 검증<span class="tag code">코드</span></div></li>
-    <li class="reveal code"><span class="ico"><svg viewBox="0 0 24 24"><use href="#i-end"/></svg></span><div><b>7 종료 판정</b>확신도·일관성·위험 질환 배제·최소 증거를 모두 만족할 때만 진단, 턴 하드캡 적용<span class="tag code">코드</span></div></li>
+    <li class="reveal llm"><span class="ico"><svg viewBox="0 0 24 24"><use href="#i-state"/></svg></span><div><b data-i18n="l.1t">1 상태 추출</b><span data-i18n="l.1d">직전 응답을 구조화 상태(소견·위험 신호 확인 여부)로 갱신</span><span class="tag llm">LLM</span></div></li>
+    <li class="reveal llm"><span class="ico"><svg viewBox="0 0 24 24"><use href="#i-diff"/></svg></span><div><b data-i18n="l.2t">2 감별 갱신</b><span data-i18n="l.2d">감별진단 목록과 확률 재순위</span><span class="tag llm">LLM</span></div></li>
+    <li class="reveal llm"><span class="ico"><svg viewBox="0 0 24 24"><use href="#i-counter"/></svg></span><div><b data-i18n="l.3t">3 반론</b><span data-i18n="l.3d">반대 근거와 놓친 위험 질환을 제시해 조기 확정을 막음</span><span class="tag llm">LLM</span></div></li>
+    <li class="reveal llm"><span class="ico"><svg viewBox="0 0 24 24"><use href="#i-action"/></svg></span><div><b data-i18n="l.4t">4 후보 액션</b><span data-i18n="l.4d">질문·진찰·검사 후보 생성</span><span class="tag llm">LLM</span></div></li>
+    <li class="reveal code"><span class="ico"><svg viewBox="0 0 24 24"><use href="#i-score"/></svg></span><div><b data-i18n="l.5t">5 점수</b><span data-i18n="l.5d">판별력 − λ·비용 − 안전 페널티</span><span class="tag code" data-i18n="tag.code">코드</span></div></li>
+    <li class="reveal code"><span class="ico"><svg viewBox="0 0 24 24"><use href="#i-gate"/></svg></span><div><b data-i18n="l.6t">6 안전 게이트</b><span data-i18n="l.6d">중복 질문 차단, 위험 신호 확인 강제, 형식 검증</span><span class="tag code" data-i18n="tag.code">코드</span></div></li>
+    <li class="reveal code"><span class="ico"><svg viewBox="0 0 24 24"><use href="#i-end"/></svg></span><div><b data-i18n="l.7t">7 종료 판정</b><span data-i18n="l.7d">확신도·일관성·위험 질환 배제·최소 증거를 모두 만족할 때만 진단, 턴 하드캡 적용</span><span class="tag code" data-i18n="tag.code">코드</span></div></li>
   </ol>
 
-  <h3 class="reveal">평가 3축 대응</h3>
+  <h3 class="reveal" data-i18n="ap.axes">평가 3축 대응</h3>
   <div class="axes">
     <article class="axis reveal">
       <span class="ax-ico"><svg viewBox="0 0 24 24"><use href="#i-target"/></svg></span>
-      <h4>정확도</h4>
-      <ul><li>구조화 상태와 감별진단 명시 유지</li><li>반론 단계로 초기 가정 고착 방지</li><li>확정 지연(최소 증거)</li><li>일관성 기반 최종 선택</li><li>공개 의학 자료 검색(RAG) 보강</li></ul>
+      <h4 data-i18n="ax.acc">정확도</h4>
+      <ul><li data-i18n="ax.a1">구조화 상태와 감별진단 명시 유지</li><li data-i18n="ax.a2">반론 단계로 초기 가정 고착 방지</li><li data-i18n="ax.a3">확정 지연(최소 증거)</li><li data-i18n="ax.a4">일관성 기반 최종 선택</li><li data-i18n="ax.a5">공개 의학 자료 검색(RAG) 보강</li></ul>
     </article>
     <article class="axis reveal">
       <span class="ax-ico"><svg viewBox="0 0 24 24"><use href="#i-bolt"/></svg></span>
-      <h4>효율성</h4>
-      <ul><li>감별진단을 잘 가르는 액션 우선</li><li>같은 효과면 문진과 비침습 검사 우선</li><li>중복 질문 차단</li><li>정보 이득이 고갈되면 종료</li></ul>
+      <h4 data-i18n="ax.eff">효율성</h4>
+      <ul><li data-i18n="ax.e1">감별진단을 잘 가르는 액션 우선</li><li data-i18n="ax.e2">같은 효과면 문진과 비침습 검사 우선</li><li data-i18n="ax.e3">중복 질문 차단</li><li data-i18n="ax.e4">정보 이득이 고갈되면 종료</li></ul>
     </article>
     <article class="axis reveal">
       <span class="ax-ico"><svg viewBox="0 0 24 24"><use href="#i-shield"/></svg></span>
-      <h4>안전성</h4>
-      <ul><li>위험 신호 선행 문진</li><li>놓치면 안 되는 질환 고정</li><li>검사 화이트리스트와 사유 검증</li><li>과잉 검사 억제</li><li>턴 하드캡으로 무진단 종료 방지</li></ul>
+      <h4 data-i18n="ax.saf">안전성</h4>
+      <ul><li data-i18n="ax.s1">위험 신호 선행 문진</li><li data-i18n="ax.s2">놓치면 안 되는 질환 고정</li><li data-i18n="ax.s3">검사 화이트리스트와 사유 검증</li><li data-i18n="ax.s4">과잉 검사 억제</li><li data-i18n="ax.s5">턴 하드캡으로 무진단 종료 방지</li></ul>
     </article>
   </div>
-  <p class="note">세부 지표와 가중치는 대회 측이 예선 전에 공개할 예정이며, 공개 후 점수식의 λ를 조정합니다.</p>
+  <p class="note" data-i18n="ap.note">세부 지표와 가중치는 대회 측이 예선 전에 공개할 예정이며, 공개 후 점수식의 λ를 조정합니다.</p>
 </div></section>
 
 <section id="refs"><div class="wrap">
-  <div class="sec-head reveal"><span class="num">03</span><h2>참고 문헌</h2></div>
-  <p class="sub reveal">설계 근거로 삼은 핵심 연구.</p>
+  <div class="sec-head reveal"><span class="num">03</span><h2 data-i18n="refs.h">참고 문헌</h2></div>
+  <p class="sub reveal" data-i18n="refs.sub">설계 근거로 삼은 핵심 연구.</p>
   <ul class="refs">
-    <li class="reveal"><a href="https://arxiv.org/abs/2401.05654" target="_blank" rel="noopener noreferrer">Towards Conversational Diagnostic AI (AMIE)</a> <span class="y">Tu 외, 2024 (Nature, 2025)</span></li>
-    <li class="reveal"><a href="https://arxiv.org/abs/2405.07960" target="_blank" rel="noopener noreferrer">AgentClinic</a> <span class="y">Schmidgall 외, 2024</span><span class="n">순차 대화로 바꾸면 정확도 급락, 지속 메모 도구로 개선</span></li>
-    <li class="reveal"><a href="https://arxiv.org/abs/2406.00922" target="_blank" rel="noopener noreferrer">MediQ</a> <span class="y">Li 외, NeurIPS 2024</span><span class="n">확신도 기반 답변 보류와 추가 질문</span></li>
-    <li class="reveal"><a href="https://arxiv.org/abs/2506.22405" target="_blank" rel="noopener noreferrer">Sequential Diagnosis with Language Models (SDBench / MAI-DxO)</a> <span class="y">Nori 외, 2025</span></li>
-    <li class="reveal"><a href="https://arxiv.org/abs/2402.03271" target="_blank" rel="noopener noreferrer">Uncertainty of Thoughts (UoT)</a> <span class="y">Hu 외, NeurIPS 2024</span><span class="n">정보 이득 기반 질문 선택</span></li>
-    <li class="reveal"><a href="https://arxiv.org/abs/2604.04325" target="_blank" rel="noopener noreferrer">Hold, Lure, and Self-Correction</a> <span class="y">Fang 외, 2026</span><span class="n">대화 초반에 답이 확정되는 경향</span></li>
-    <li class="reveal"><a href="https://arxiv.org/abs/2505.06120" target="_blank" rel="noopener noreferrer">LLMs Get Lost in Multi-Turn Conversation</a> <span class="y">Laban 외, 2025</span><span class="n">다턴 대화에서 성능 저하</span></li>
+    <li class="reveal"><a href="https://arxiv.org/abs/2401.05654" target="_blank" rel="noopener noreferrer">Towards Conversational Diagnostic AI (AMIE)</a> <span class="y" data-i18n="r.1y">Tu 외, 2024 (Nature, 2025)</span></li>
+    <li class="reveal"><a href="https://arxiv.org/abs/2405.07960" target="_blank" rel="noopener noreferrer">AgentClinic</a> <span class="y" data-i18n="r.2y">Schmidgall 외, 2024</span><span class="n" data-i18n="r.2n">순차 대화로 바꾸면 정확도 급락, 지속 메모 도구로 개선</span></li>
+    <li class="reveal"><a href="https://arxiv.org/abs/2406.00922" target="_blank" rel="noopener noreferrer">MediQ</a> <span class="y" data-i18n="r.3y">Li 외, NeurIPS 2024</span><span class="n" data-i18n="r.3n">확신도 기반 답변 보류와 추가 질문</span></li>
+    <li class="reveal"><a href="https://arxiv.org/abs/2506.22405" target="_blank" rel="noopener noreferrer">Sequential Diagnosis with Language Models (SDBench / MAI-DxO)</a> <span class="y" data-i18n="r.4y">Nori 외, 2025</span></li>
+    <li class="reveal"><a href="https://arxiv.org/abs/2402.03271" target="_blank" rel="noopener noreferrer">Uncertainty of Thoughts (UoT)</a> <span class="y" data-i18n="r.5y">Hu 외, NeurIPS 2024</span><span class="n" data-i18n="r.5n">정보 이득 기반 질문 선택</span></li>
+    <li class="reveal"><a href="https://arxiv.org/abs/2604.04325" target="_blank" rel="noopener noreferrer">Hold, Lure, and Self-Correction</a> <span class="y" data-i18n="r.6y">Fang 외, 2026</span><span class="n" data-i18n="r.6n">대화 초반에 답이 확정되는 경향</span></li>
+    <li class="reveal"><a href="https://arxiv.org/abs/2505.06120" target="_blank" rel="noopener noreferrer">LLMs Get Lost in Multi-Turn Conversation</a> <span class="y" data-i18n="r.7y">Laban 외, 2025</span><span class="n" data-i18n="r.7n">다턴 대화에서 성능 저하</span></li>
     <li class="reveal"><a href="https://arxiv.org/abs/2508.10925" target="_blank" rel="noopener noreferrer">gpt-oss-120b &amp; gpt-oss-20b Model Card</a> <span class="y">OpenAI, 2025</span></li>
   </ul>
 </div></section>
 
 <section id="status" class="tintbg"><div class="wrap">
-  <div class="sec-head reveal"><span class="num">04</span><h2>진행 현황</h2></div>
-  <p class="sub reveal">N.O.V.A. 2026 일정</p>
+  <div class="sec-head reveal"><span class="num">04</span><h2 data-i18n="st.h">진행 현황</h2></div>
+  <p class="sub reveal" data-i18n="st.sub">N.O.V.A. 2026 일정</p>
   <ol class="steps">
-    <li class="done reveal"><i class="dot" aria-hidden="true"></i><b>10/3</b><span>참가 신청 완료</span></li>
-    <li class="next reveal"><i class="dot" aria-hidden="true"></i><b>10/6</b><span>개회</span></li>
-    <li class="reveal"><i class="dot" aria-hidden="true"></i><b>10/12 – 10/22</b><span>예선</span></li>
-    <li class="reveal"><i class="dot" aria-hidden="true"></i><b>10/27 – 11/10</b><span>본선</span></li>
-    <li class="reveal"><i class="dot" aria-hidden="true"></i><b>11/20</b><span>시상</span></li>
+    <li class="done reveal"><i class="dot" aria-hidden="true"></i><b>10/3</b><span data-i18n="st.1">참가 신청 완료</span></li>
+    <li class="next reveal"><i class="dot" aria-hidden="true"></i><b>10/6</b><span data-i18n="st.2">개회</span></li>
+    <li class="reveal"><i class="dot" aria-hidden="true"></i><b>10/12 – 10/22</b><span data-i18n="st.3">예선</span></li>
+    <li class="reveal"><i class="dot" aria-hidden="true"></i><b>10/27 – 11/10</b><span data-i18n="st.4">본선</span></li>
+    <li class="reveal"><i class="dot" aria-hidden="true"></i><b>11/20</b><span data-i18n="st.5">시상</span></li>
   </ol>
 </div></section>
 </main>
 
 <footer><div class="wrap">
-  <p class="secure">비공개 증례·평가 데이터는 이 저장소에 포함하지 않습니다.</p>
+  <p class="secure" data-i18n="ft.secure">비공개 증례·평가 데이터는 이 저장소에 포함하지 않습니다.</p>
   <p>Rounds · 회진 &middot; <a href="https://nova.snubhai.org/" target="_blank" rel="noopener noreferrer">N.O.V.A. 2026</a></p>
 </div></footer>
 
-<script src="members.js"></script>
-<script src="assets/app.js"></script>
+<script src="assets/i18n.js?v=10032339"></script>
+<script src="members.js?v=10032339"></script>
+<script src="assets/app.js?v=10032339"></script>
 </body>
 </html>

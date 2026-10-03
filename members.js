@@ -22,6 +22,7 @@ window.MEMBERS = [
       "SKALA 신약 독성 예측 경연 119명 중 17위"
     ],
     en: {
+      name: "Byeongheon Jang",
       role: "Team Lead · Agent design & development",
       affiliation: "SK AI Leader Academy (SKALA) Cohort 4 · SSAFY Cohort 14 · Chonnam National University (B.A. in Philosophy)",
       intro: "I have designed and built LLM agents in the defense, drug discovery, and payments domains. What interests me is deciding what to hand to the LLM and what to lock down in code.",
@@ -53,6 +54,7 @@ window.MEMBERS = [
       "한양대 계산신경영상분석(CNA) 연구실 · 서울여대 시각컴퓨팅·의료영상(VCMI) 연구실"
     ],
     en: {
+      name: "Yeonju Park",
       role: "Vice Lead · Medical imaging & graph modeling",
       affiliation: "SK AI Leader Academy (SKALA) Cohort 4 · Hanyang University (M.S. in Artificial Intelligence)",
       intro: "I studied Alzheimer's classification using brain imaging (DTI, rs-fMRI) and genomic data. I value model complexity matched to the scale of the data, and controlled experiments.",
@@ -79,6 +81,7 @@ window.MEMBERS = [
       "ETRI 과제 TANGO 신경망 시각화 프레임워크 프론트엔드 개발"
     ],
     en: {
+      name: "Minseo Shin",
       role: "Team Member · Vision & multimodal / medical data",
       affiliation: "SK AI Leader Academy (SKALA) Cohort 4 · Hongik University (B.S. in Computer Engineering)",
       intro: "As an undergraduate research assistant, I worked on vision and multimodal research and carried out three hospital-collaboration medical AI projects (rehabilitation, facial reconstruction, and monitoring of patient risk behavior).",
