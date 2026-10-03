@@ -3,7 +3,7 @@
   var LABELS={github:"GitHub",portfolio:"포트폴리오",paper:"논문",project:"프로젝트"};
   var root=document.getElementById("members");
   function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
-  function safeUrl(u){return /^https?:\/\//i.test(u||"")}
+  function safeUrl(u){return /^https?:\/\//i.test(u||"")||/^assets\/[\w\-./]+$/.test(u||"")}
   (window.MEMBERS||[]).forEach(function(m){
     var c=el("article","card");
     var ph=el("div","photo");

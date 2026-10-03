@@ -39,10 +39,21 @@ window.MEMBERS = [
   {
     name: "신민서",
     photo: "", // 본인 동의 후 assets/members/shin-minseo.jpg 로 추가
-    role: "팀원",
-    affiliation: "SK AI Leader Academy (SKALA) 4기",
-    intro: "TODO",
-    highlights: [],
-    links: { github: "", portfolio: "", paper: "", project: "" }
+    role: "팀원 · 비전·멀티모달 / 의료 데이터",
+    affiliation: "SK AI Leader Academy (SKALA) 4기 · 홍익대학교 컴퓨터공학과 졸업",
+    intro: "학부연구생으로 비전·멀티모달 연구를 하며 병원 협업 의료 AI 프로젝트 3건(재활, 안면 재건, 환자 위험행동 감시)을 수행했습니다.",
+    highlights: [
+      "가톨릭대 여의도성모병원 연구 지원: 정형외과 수술 후 재활 앱, 임상 데이터 포즈 인식 오류 개선 · 특허 출원(10-2024-0115574)",
+      "세브란스병원 협업: 2D 다시점 이미지 기반 안면부 3D Mesh 재구성(가상수술)",
+      "인하대병원 협업: 환자 낙상·자해 실시간 검출 시스템(DeepStream, C++)",
+      "ICTC 2024 논문 공저(Diffusion 기반 포즈 변환 정보 보존), 연속 수화 인식 적대적 공격 논문 저널 심사 중",
+      "ETRI 과제 TANGO 신경망 시각화 프레임워크 프론트엔드 개발"
+    ],
+    links: {
+      github: "",
+      portfolio: "assets/docs/portfolio-shin-minseo.pdf",
+      paper: "",
+      project: "https://github.com/ML-TANGO/TANGO"
+    }
   }
 ];
