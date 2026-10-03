@@ -39,7 +39,7 @@ window.MEMBERS = [
       "뇌 부위별 유전자 발현(AHBA) 기반 유전자 그래프 구축",
       "한양대 계산신경영상분석(CNA) 연구실 · 서울여대 시각컴퓨팅·의료영상(VCMI) 연구실"
     ],
-    links: { github: "", portfolio: "", paper: "", project: "" }
+    links: { github: "", portfolio: "assets/docs/portfolio-park-yeonju.pdf", paper: "", project: "" }
   },
   {
     name: "신민서",
