@@ -24,7 +24,7 @@ window.MEMBERS = [
       github: "https://github.com/jang961111-hash",
       portfolio: "https://jang961111-hash.github.io/",
       paper: "",
-      project: "https://github.com/jang961111-hash/jangbogo"
+      project: ""
     }
   },
   {
@@ -53,7 +53,7 @@ window.MEMBERS = [
       github: "",
       portfolio: "assets/docs/portfolio-shin-minseo.pdf",
       paper: "",
-      project: "https://github.com/ML-TANGO/TANGO"
+      project: ""
     }
   }
 ];
