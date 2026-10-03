@@ -44,6 +44,7 @@ window.MEMBERS = [
   {
     name: "박연주",
     photo: "assets/members/park-yeonju.jpg",
+    photoZoom: 1.1, // 다른 두 사진과 얼굴 크기 맞춤(표시용 확대, 원본 파일은 그대로)
     role: "부팀장 · 의료영상·그래프 모델링",
     affiliation: "SK AI Leader Academy (SKALA) 4기 · 한양대학교 인공지능학과 석사",
     intro: "뇌영상(DTI·rs-fMRI)과 유전체 데이터로 알츠하이머 분류를 연구했습니다. 데이터 규모에 맞는 모델 복잡도와 통제 실험을 중시합니다.",
