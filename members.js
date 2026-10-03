@@ -44,13 +44,5 @@ window.MEMBERS = [
     intro: "TODO",
     highlights: [],
     links: { github: "", portfolio: "", paper: "", project: "" }
-  },
-  {
-    name: "(확정 예정)",
-    role: "임상 검수 (문진 순서 · 위험 신호 · 진단명 표준화)",
-    affiliation: "TODO",
-    intro: "TODO",
-    highlights: [],
-    links: { github: "", portfolio: "", paper: "", project: "" }
   }
 ];
