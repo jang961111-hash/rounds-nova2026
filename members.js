@@ -16,10 +16,10 @@ window.MEMBERS = [
     intro: "국방·신약·결제 도메인에서 LLM 에이전트를 설계·구현해 왔습니다. LLM에게 무엇을 맡기고 무엇을 코드로 묶을지가 관심사입니다.",
     highlights: [
       "SKT 모두의 Promp.T 공모전 Life AX 부문 최우수상 (2026.8)",
-      "D4D 국방 AI 해커톤 우승 (무인체계 3종 1인 운용 AI 에이전트)",
+      "D4D 국방 AI 해커톤 Oregon UAS Accelerator 특별 트랙 선정 (무인체계 3종 1인 운용 AI 에이전트)",
       "SKALA 신약개발 에이전트 프로젝트 (LLM 근거 수집 + 규칙 판정)",
       "Google×Solana AI Agentic Hackathon '장보고'",
-      "SKALA 신약 독성 예측 경연 119팀 중 17위"
+      "SKALA 신약 독성 예측 경연 119명 중 17위"
     ],
     links: {
       github: "https://github.com/jang961111-hash",
